@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="79dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log In"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#8F8C8C"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="18dp"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:inputType="textEmailAddress"
+                    android:width="300dp"
+                    android:height="40dp"
+                    android:background="#F6F7FA"
+                    android:text="Email"
+                    android:textColor="#9D9FA0"
+                    android:paddingHorizontal="15dp"
+                    android:drawableRight="@drawable/icon_ceklis"
+                    android:textStyle="bold"
+                    >
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:inputType="textEmailAddress"
+                    android:width="300dp"
+                    android:height="40dp"
+                    android:background="#F6F7FA"
+                    android:text="Password"
+                    android:textColor="#9D9FA0"
+                    android:paddingHorizontal="15dp"
+                    android:drawableRight="@drawable/icon_eye_hide"
+                    android:textStyle="bold"
+                    android:layout_marginTop="45dp"
+                    >
+
+                </EditText>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:backgroundTint="#8F8C8C"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Log in"
+                    app:cornerRadius="15dp"
+                    android:layout_marginTop="55dp"
+
+                    > </Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <android.support.percent.PercentRelativeLayout>
+
+                    </android.support.percent.PercentRelativeLayout>
+                    <View
+                        android:layout_width="148dp"
+                        android:layout_height="2dp"
+                        android:background="#C7C9D9">
+                    </View>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="or">
+
+                    </TextView>
+                    <View
+                        android:layout_width="148dp"
+                        android:layout_height="2dp"
+                        android:background="#C7C9D9">
+                    </View>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
