@@ -4,120 +4,151 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
     >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            >
+            tools:ignore="UselessParent"
+            android:layout_marginTop="57dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:orientation="vertical"
+                android:layout_marginTop="19dp"
                 android:gravity="center"
-                android:layout_marginTop="79dp"
-                >
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/logo"
-                    ></ImageView>
+                    android:contentDescription="@string/logo_icon"
+                    android:src="@drawable/logo" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Log In"
-                    android:gravity="center"
                     android:layout_marginTop="10dp"
-                    android:textSize="24dp"
-                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="@string/log_in"
                     android:textColor="#8F8C8C"
-                    />
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
                 android:layout_marginHorizontal="18dp"
-                >
+
+                android:orientation="vertical">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
-                    android:inputType="textEmailAddress"
                     android:width="300dp"
                     android:height="40dp"
                     android:background="#F6F7FA"
-                    android:text="Email"
-                    android:textColor="#9D9FA0"
+                    android:drawableEnd="@drawable/icon_ceklis"
+                    android:inputType="textEmailAddress"
                     android:paddingHorizontal="15dp"
-                    android:drawableRight="@drawable/icon_ceklis"
+                    android:text="@string/email"
+                    android:textColor="#9D9FA0"
                     android:textStyle="bold"
-                    >
+                    android:autofillHints="emailAddress"
+                    tools:ignore="Email,LabelFor">
 
                 </EditText>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
-                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="45dp"
                     android:width="300dp"
                     android:height="40dp"
+                    android:text="@string/password"
                     android:background="#F6F7FA"
-                    android:text="Password"
-                    android:textColor="#9D9FA0"
+                    android:drawableEnd="@drawable/icon_eye_hide"
+                    android:inputType="textEmailAddress"
                     android:paddingHorizontal="15dp"
-                    android:drawableRight="@drawable/icon_eye_hide"
+                    android:textColor="#9D9FA0"
                     android:textStyle="bold"
-                    android:layout_marginTop="45dp"
-                    >
+                    android:autofillHints="password"
+                    tools:ignore="LabelFor,Password">
 
                 </EditText>
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="56dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="55dp"
                     android:backgroundTint="#8F8C8C"
-                    android:textSize="14sp"
+                    android:text="@string/log_in"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
                     android:textStyle="bold"
-                    android:text="Log in"
                     app:cornerRadius="15dp"
-                    android:layout_marginTop="55dp"
+                    />
 
-                    > </Button>
+
+                <androidx.percentlayout.widget.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"
+                    >
+
+                    <View
+                        android:id="@+id/garis_1"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="#F6F7FA"
+                        app:layout_widthPercent="45%"
+                        android:layout_centerVertical="true"
+                      />
+
+                    <TextView
+                        android:id="@+id/text_or"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/or"
+                        app:layout_widthPercent="10%"
+                        android:layout_toEndOf="@+id/garis_1"
+                        android:textAlignment="center"
+                        />
+
+                    <View
+                        android:id="@+id/garis_2"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_toEndOf="@+id/text_or"
+                        android:background="#F6F7FA"
+                        app:layout_widthPercent="45%"
+                        android:layout_centerVertical="true"/>
+
+                </androidx.percentlayout.widget.PercentRelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <android.support.percent.PercentRelativeLayout>
-
-                    </android.support.percent.PercentRelativeLayout>
-                    <View
-                        android:layout_width="148dp"
-                        android:layout_height="2dp"
-                        android:background="#C7C9D9">
-                    </View>
+                    android:layout_marginTop="20dp"
+                    >
                     <TextView
+                        android:textAlignment="center"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="or">
-
+                        android:text="@string/pertanyaan_register">
                     </TextView>
-                    <View
-                        android:layout_width="148dp"
-                        android:layout_height="2dp"
-                        android:background="#C7C9D9">
-                    </View>
                 </LinearLayout>
             </LinearLayout>
 
