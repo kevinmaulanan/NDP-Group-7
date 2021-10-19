@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZeSmart">
         <activity
+            android:name=".DetailMateriActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OnBoardingActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity
