@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             tools:ignore="UselessParent"
-            android:layout_marginTop="57dp">
+            android:layout_marginTop="27dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -39,7 +39,7 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="@string/create_account"
-                    android:textColor="#8F8C8C"
+                    android:textColor="#102755"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -63,8 +63,7 @@
                     android:inputType="textEmailAddress"
                     android:paddingHorizontal="15dp"
                     android:hint="@string/email"
-                    android:textColor="#78909C"
-                    android:textStyle="bold"
+                    android:textColor="#102755"
                     tools:ignore="Email,LabelFor">
 
                 </EditText>
@@ -81,8 +80,7 @@
                     android:inputType="text"
                     android:paddingHorizontal="15dp"
                     android:hint="@string/username"
-                    android:textColor="#78909C"
-                    android:textStyle="bold"
+                    android:textColor="#102755"
                     tools:ignore="LabelFor,Username">
 
                 </EditText>
@@ -99,8 +97,7 @@
                     android:inputType="textEmailAddress"
                     android:paddingHorizontal="15dp"
                     android:hint="@string/password"
-                    android:textColor="#78909C"
-                    android:textStyle="bold"
+                    android:textColor="#102755"
                     tools:ignore="LabelFor,Password">
 
                 </EditText>
@@ -117,8 +114,7 @@
                     android:inputType="textEmailAddress"
                     android:paddingHorizontal="15dp"
                     android:hint="@string/confirm_password"
-                    android:textColor="#78909C"
-                    android:textStyle="bold"
+                    android:textColor="#102755"
                     tools:ignore="LabelFor,Password">
 
                 </EditText>
@@ -127,7 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="52dp"
-                    android:backgroundTint="#8F8C8C"
+                    android:backgroundTint="#102755"
                     android:text="@string/sign_up"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
@@ -136,6 +132,19 @@
                     app:cornerRadius="15dp"
                     tools:ignore="DuplicateSpeakableTextCheck" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#102755"
+                        android:text="@string/pertanyaan_register">
+                    </TextView>
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
