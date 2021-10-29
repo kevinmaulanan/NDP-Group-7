@@ -52,6 +52,7 @@
                     android:textSize="26dp"
                     android:layout_toEndOf="@+id/garis_1"
                     android:textAlignment="center"
+                    android:fontFamily="@font/poppins_semi_bold"
                     />
                 </androidx.percentlayout.widget.PercentRelativeLayout>
             </LinearLayout>
@@ -80,7 +81,8 @@
                         android:textSize="18dp"
                         android:textColor="#102755"
                         android:justificationMode="inter_word"
-                        android:layout_marginRight="10dp">
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/poppins_regular">
 
                     </TextView>
                 </LinearLayout>

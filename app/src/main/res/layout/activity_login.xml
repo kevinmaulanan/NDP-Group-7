@@ -42,7 +42,8 @@
                     android:text="@string/log_in"
                     android:textColor="#102755"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_semi_bold"/>
 
             </LinearLayout>
 
@@ -64,6 +65,7 @@
                     app:boxStrokeWidthFocused="1dp"
                     app:endIconMode="custom"
                     app:endIconDrawable="@drawable/icon_ceklis"
+
                     >
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -71,7 +73,7 @@
                         android:inputType="textEmailAddress"
                         android:background="#F6F7FA"
                         android:paddingHorizontal="15dp"
-
+                        android:fontFamily="@font/poppins_regular"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -94,6 +96,7 @@
                         android:inputType="textPassword"
                         android:background="#F6F7FA"
                         android:paddingHorizontal="15dp"
+                        android:fontFamily="@font/poppins_regular"
 
                         />
 
@@ -112,7 +115,8 @@
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:cornerRadius="15dp"
-                    tools:ignore="DuplicateSpeakableTextCheck" />
+                    tools:ignore="DuplicateSpeakableTextCheck"
+                    android:fontFamily="@font/poppins_semi_bold"/>
 
 
                 <androidx.percentlayout.widget.PercentRelativeLayout
@@ -139,6 +143,7 @@
                         app:layout_widthPercent="10%"
                         android:layout_toEndOf="@+id/garis_1"
                         android:textAlignment="center"
+                        android:fontFamily="@font/poppins_semi_bold"
                         />
 
                     <View
@@ -163,7 +168,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:textColor="#102755"
-                        android:text="@string/pertanyaan_login">
+                        android:text="@string/pertanyaan_login"
+                        android:fontFamily="@font/poppins_semi_bold">
                     </TextView>
                 </LinearLayout>
             </LinearLayout>

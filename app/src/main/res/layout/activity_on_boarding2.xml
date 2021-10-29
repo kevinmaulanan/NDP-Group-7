@@ -36,25 +36,20 @@
                     android:text="Enjoy Your Class"
                     android:textColor="#4E585E"
                     android:textSize="24dp"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/poppins_semi_bold"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:paddingHorizontal="50dp"
-                    android:text="Best and popular apps for live education"
+                    android:text="Best and popular apps for live education course from home"
                     android:textColor="#102755"
-                    android:textSize="15dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
                     android:gravity="center"
-                    android:paddingHorizontal="50dp"
-                    android:text="course from home"
-                    android:textColor="#102755"
-                    android:textSize="15dp" />
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
 
                 <ImageView
                     android:layout_width="match_parent"
