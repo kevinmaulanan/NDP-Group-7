@@ -48,7 +48,7 @@ public class OnBoardingActivity extends AppCompatActivity {
     }
 
     public void redirectLogin(View view) {
-        Intent pindahKeRegister = new Intent(OnBoardingActivity.this, LoginActivity.class);
-        startActivity(pindahKeRegister);
+        final LoadingClass loadingDialog = new LoadingClass(OnBoardingActivity.this);
+        loadingDialog.startLoadingDialog(null,OnBoardingActivity.this, LoginActivity.class);
     }
 }

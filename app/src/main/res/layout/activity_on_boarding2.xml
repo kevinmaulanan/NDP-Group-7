@@ -19,7 +19,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:orientation="vertical"
-                android:paddingVertical="60dp">
+                android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -36,13 +36,14 @@
                     android:text="Enjoy Your Class"
                     android:textColor="#4E585E"
                     android:textSize="24dp"
+                    android:textStyle="bold"
                     android:fontFamily="@font/poppins_semi_bold"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:paddingHorizontal="50dp"
+                    android:paddingHorizontal="30dp"
                     android:text="Best and popular apps for live education course from home"
                     android:textColor="#102755"
                     android:textSize="15dp"
@@ -53,8 +54,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="360dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/image_onboarding2"/>
 
                 <LinearLayout
@@ -78,7 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
+
                     android:gravity="center">
 
                     <ImageView
